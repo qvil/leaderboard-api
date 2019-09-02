@@ -16,4 +16,18 @@ public class PlayerService {
 
         return playerRepository.findByName(name);
     }
+
+    public void create(PlayerEntity playerEntity) {
+        playerEntity.setId(null);
+        playerRepository.save(playerEntity);
+    }
+
+    public void update(Long id, PlayerEntity playerEntity) {
+        playerEntity.setId((id));
+        playerRepository.save(playerEntity);
+    }
+
+    public void delete(Long id) {
+        playerRepository.deleteById(id);
+    }
 }

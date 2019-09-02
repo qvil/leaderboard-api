@@ -1,0 +1,24 @@
+POST localhost:8080/players/
+Content-Type: application/json
+
+{
+  "name": "qvil",
+  "position": "Frontend"
+}
+
+###
+
+PUT localhost:8080/players/1
+Content-Type: application/json
+
+{
+  "name": "newName",
+  "position": "top"
+}
+
+###
+
+DELETE localhost:8080/players/1
+Content-Type: application/json
+
+###

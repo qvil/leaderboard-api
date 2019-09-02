@@ -14,4 +14,7 @@ public class PlayerEntity {
 
     @Basic
     private String name;
+
+    @Basic
+    private String position;
 }
