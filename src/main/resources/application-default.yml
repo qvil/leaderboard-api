@@ -13,6 +13,8 @@ logging:
               BasicBinder: TRACE
         SQL: DEBUG
 spring:
+  mvc:
+    static-path-pattern: /static/**
   datasource:
     maximumPoolSize: 1
     driver-class-name: com.mysql.cj.jdbc.Driver
